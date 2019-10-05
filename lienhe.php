@@ -18,9 +18,9 @@ if (isset($_POST['name']) == true) {
     if ($nd == "") $loi .= "Bạn chưa nhập nội dung liên hệ<br>";
     else if (strlen($nd) <= 10) $loi .= "Nội dung liên hệ quá ngắn<br>";
     if ($loi == "") {
-        $to = "<Địa chỉ mail của người admin nhận mail>";
-        $from = "<Địa chỉ mail bạn dùng để gửi mail>";
-        $pass = "<Pass của mail bạn dùng để gửi mail>";
+        $to = "cn14bgtvt@gmail.com";
+        $from = "cn14bgtvt@gmail.com";
+        $pass = "Khongcomatkhau";
         $topText = "Họ tên: {$ht}<br>Email: {$m}<br>Tiêu đề: {$td}";
         $nd = $topText . "<br>Nội dung:<hr>" . $nd;
         $error = "";

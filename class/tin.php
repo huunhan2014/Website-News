@@ -414,8 +414,8 @@ class tin extends goc
     function GuiMail($to, $from, $from_name, $subject, $body, $username, $password, &$error)
     {
         $error = "";
-        require_once "class/class.phpmailer.php";
-        require_once "class/class.smtp.php";
+        require_once $_SERVER['DOCUMENT_ROOT'] . "/news/PHPMailer-master/class.phpmailer.php";
+        require_once $_SERVER['DOCUMENT_ROOT'] . "/news/PHPMailer-master/class.smtp.php";
         try {
             $mail = new PHPMailer();
             $mail->IsSMTP();
@@ -429,7 +429,7 @@ class tin extends goc
             $mail->SetFrom($from, $from_name);
             $mail->Subject = $subject;
             $mail->MsgHTML($body); // noi dung chinh cua mail
-            $mail->AddAddress($to);
+            $mail->addAddress($to);
             $mail->CharSet = "utf-8";
             $mail->IsHTML(true);
             $mail->SMTPOptions = array(
