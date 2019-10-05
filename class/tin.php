@@ -440,7 +440,7 @@ class tin extends goc
                 )
             );
             if (!$mail->Send()) {
-                $error = 'Loi:' . $mail->ErrorInfo;
+                $error = 'Lỗi:' . $mail->ErrorInfo;
                 return false;
             } else {
                 $error = '';
