@@ -2,8 +2,8 @@
     <nav>
         <ul class="sf-menu">
             <li class="selected">
-                <a href="" title="Trang chủ ">
-                    Trang chủ
+                <a href="" title="{Trang_Chu}">
+                {Trang_Chu}
                 </a>
             </li>
 
@@ -30,7 +30,7 @@
             <?php } ?>
             <li>
                 <a href="lien-he/"  title="Liên Hệ">
-                    Liên Hệ
+                    {Lien_He}
                 </a>
             </li>
         </ul>

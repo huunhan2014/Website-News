@@ -6,7 +6,10 @@ RewriteRule ^tags/(.*)/(.*)/$ index.php?p=tags&TenTag_KhongDau=$1&pageNum=$2 [L]
 RewriteRule ^tags/(.*)/$ index.php?p=tags&TenTag_KhongDau=$1&pageNum=1 [L]
 RewriteRule ^search/(.*)/(.*)/$ index.php?p=search&tukhoa=$1&pageNum=$2 [L]
 RewriteRule ^search/(.*)/$ index.php?p=search&tukhoa=$1&pageNum=1 [L]
-RewriteRule ^lien-he/$  index.php?p=lienhe [L]	
+RewriteRule ^lien-he/$  index.php?p=lienhe [L]
+Rewritebase /news/	
+RewriteRule ^vi/$  index.php?lang=vi [L]
+RewriteRule ^en/$  index.php?lang=en [L]
 DirectoryIndex index.php
 AddDefaultCharset UTF-8
 Options -Indexes

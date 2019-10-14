@@ -7,12 +7,17 @@
         ?>
 
         <input type="hidden" name="p" value="search">
-        <input type="text" name="tukhoa" placeholder="Từ khóa" value="<?= $tukhoa ?>" class="search_input hint" required>
+        <input type="text" name="tukhoa" placeholder="{Tu_Khoa}" value="<?= $tukhoa ?>" class="search_input hint" required>
         <input type="submit" class="search_submit" value="">
     </form>
     <!--<ul class="social_icons dark clearfix">
 					<ul class="social_icons colors clearfix">-->
     <ul class="social_icons clearfix">
+        <li>
+            <a href="/news/vi/"> <img src="flag/vi.png" height="30px" width="30px" style="margin: 0 10px;"></a>
+            <a href="/news/en/"> <img src="flag/en.png" height="30px" width="30px" style="margin: 0 10px;"></a>
+        </li>
+
         <li>
             <a target="_blank" href="http://facebook.com/QuanticaLabs" class="social_icon facebook" title="facebook">
                 &nbsp;
@@ -36,7 +41,7 @@
     </ul>
     <div class="latest_news_scrolling_list_container">
         <ul>
-            <li class="category">MỚI NHẬN</li>
+            <li class="category">{Moi_Nhan}</li>
             <li class="left"><a href="#"></a></li>
             <li class="right"><a href="#"></a></li>
             <li class="posts">
