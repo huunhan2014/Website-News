@@ -46,7 +46,7 @@ if (isset($_POST['name']) == true) {
 <?php if (isset($_SESSION['camon']) == false) { ?>
 
 
-    <form class="contact_form margin_top_15" id="contact_form" method="post" action="">
+    <form class="contact_form margin_top_15" id="contact_form" method="POST" action="">
         <fieldset class="column column_1_3">
             <div class="block">
                 <input class="text_input" name="name" type="text" value="<?php if (isset($_POST['name'])) echo $_POST['name'] ?>" placeholder="Họ tên của bạn *">
