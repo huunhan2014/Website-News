@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT']."/news/config.php";
+require_once "config.php";
 // require_once ("config.php"); --index public
 // require_once ("../config.php"); --index admin
 // file goc.php sẽ thay đổi vị trí liên kết đến file config.php dựa theo vị trí file index.php hiện hành
@@ -15,5 +15,3 @@ class goc {
 	//các method
 	
 } //class goc
-?> 
-
