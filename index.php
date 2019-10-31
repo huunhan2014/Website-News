@@ -16,7 +16,7 @@ $_SESSION['lang'] = $lang;
 
 <head>
 	<title><?= $t->getTitle($p); ?> </title>
-	<base href="http://localhost/news/" /> <!-- định dạng lại khi dùng htaccess -->
+	<base href="<?= BASE_URL ?>" /> <!-- định dạng lại khi dùng htaccess -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!--meta-->
 	<meta charset="UTF-8" />
@@ -304,31 +304,12 @@ $_SESSION['lang'] = $lang;
 				<div class="row">
 
 					<?php require "footer1.php" ?>
-					<?php require "footer2.php" ?>
-					<?php require "footer3.php" ?>
-
+					<?php //require "footer2.php" ?>
+					<?php //require "footer3.php" ?>
 				</div>
 				<div class="row page_margin_top_section">
-					<div class="column column_3_4">
-						<ul class="footer_menu">
-							<li>
-								<h4><a href="category_world.html" title="World">World</a></h4>
-							</li>
-							<li>
-								<h4><a href="category_health.html" title="Health">Health</a></h4>
-							</li>
-							<li>
-								<h4><a href="category_sports.html" title="Sports">Sports</a></h4>
-							</li>
-							<li>
-								<h4><a href="category_science.html" title="Science">Science</a></h4>
-							</li>
-							<li>
-								<h4><a href="category_lifestyle.html" title="Lifestyle">Lifestyle</a></h4>
-							</li>
-						</ul>
-					</div>
-					<div class="column column_1_4">
+					
+					<div class="column_right">
 						<a class="scroll_top" href="#top" title="Back To Top">Back To Top</a>
 					</div>
 				</div>
