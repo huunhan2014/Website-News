@@ -424,4 +424,64 @@ class quantritin extends goc
 
     // End ykien
     //====================================================================================
+
+    function ListUsers()
+    {
+        $sql = "SELECT *
+        FROM `users`";
+        $kq = $this->db->query($sql);
+        if (!$kq) die($this->db->error);
+        return $kq;
+    } //end  function ListUsers
+
+    function Users_Them($HoTen, $Username, $Email, $idGroup, $GioiTinh)
+    {
+        $HoTen = $this->db->escape_string(trim(strip_tags($HoTen)));
+        $Username = $this->db->escape_string(trim(strip_tags($Username)));
+        $Email = $this->db->escape_string(trim(strip_tags($Email)));
+        settype($idGroup, "int");
+        settype($GioiTinh, "int");
+        $sql = "INSERT INTO users 
+        SET `HoTen`='$HoTen',`Username`='$Username',`Email`='$Email',
+        `idGroup`=$idGroup,`GioiTinh`='$GioiTinh',
+        Password=md5(1), NgayDangKy= now()";
+        $kq = $this->db->query($sql);
+        if (!$kq) die($this->db->error);
+    } //end function Users_Them
+
+    function Users_ChiTiet($idUser)
+    {
+        $sql = "SELECT *
+        FROM `users` 
+        WHERE idUser=$idUser";
+        $kq = $this->db->query($sql);
+        if (!$kq) die($this->db->error);
+        return $kq;
+    } //end function Users_ChiTiet
+
+    function Users_Sua($idUser,$HoTen, $Username, $Email, $idGroup, $GioiTinh)
+    {
+        $HoTen = $this->db->escape_string(trim(strip_tags($HoTen)));
+        $Username = $this->db->escape_string(trim(strip_tags($Username)));
+        $Email = $this->db->escape_string(trim(strip_tags($Email)));
+        settype($idGroup, "int");
+        settype($GioiTinh, "int");
+        $sql = "UPDATE users 
+        SET `HoTen`='$HoTen',`Username`='$Username',`Email`='$Email',
+        `idGroup`=$idGroup,`GioiTinh`='$GioiTinh'
+        WHERE idUser=$idUser";
+        $kq = $this->db->query($sql);
+        if (!$kq) die($this->db->error);
+    } //end function Users_Sua
+
+    function Users_Xoa($idUser)
+    {
+        settype($idUser, "int");
+        $sql = "DELETE FROM users WHERE idUser=$idUser";
+        $kq = $this->db->query($sql);
+        if (!$kq) die("Loi trong ham`" . __FUNCTION__ . "" . $this->db->error);
+    } //end function Users_Xoa
+
+    // End users
+    //====================================================================================
 }//class quantritin

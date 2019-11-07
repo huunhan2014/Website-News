@@ -19,7 +19,7 @@ $qt->checkLogin(); //chuyển qua login.php nếu chưa đăng nhặp or kô là
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+    <link rel="shortcut icon" href="../images/favicon2.png" type="image/png">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
@@ -287,7 +287,7 @@ $qt->checkLogin(); //chuyển qua login.php nếu chưa đăng nhặp or kô là
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="images/user.png" width="48" height="48" alt="User" />
+                    <img src="images/userNhan.PNG" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['login_hoten'] ?> </div>
@@ -315,10 +315,10 @@ $qt->checkLogin(); //chuyển qua login.php nếu chưa đăng nhặp or kô là
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+                    &copy; 2019 &nbsp; &nbsp; <a href="#"> Nhất Nghệ - Nguyễn Hữu Nhân </a>
                 </div>
                 <div class="version">
-                    <b>Version: </b> 1.0.5
+                    <b>Version: </b> 1.2
                 </div>
             </div>
             <!-- #Footer -->
@@ -527,6 +527,10 @@ $qt->checkLogin(); //chuyển qua login.php nếu chưa đăng nhặp or kô là
 
             case "users_sua":
                 require "users_sua.php";
+                break;
+
+            case "users_them":
+                require "users_them.php";
                 break;
                 //end users
 

@@ -334,12 +334,20 @@ h6 {
 }
 .header h1 a {
   color: #ed1c24;
-  background: linear-gradient(to right,#f22, #f2f,#22f, #2ff,#2f2,#ff2,#f22); 
+  background: linear-gradient(
+    to right,
+    #f22,
+    #f2f,
+    #22f,
+    #2ff,
+    #2f2,
+    #ff2,
+    #f22
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   /* background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) ); */
-
 }
 .header h4 {
   color: #3b3a3a;
@@ -567,14 +575,18 @@ h6 {
 }
 /* --- footer --- */
 .footer_container {
-  background: #363b40;
+  border-top: #363b40 5px solid;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: url("../quantri/images/33.jpg");
+  background-position: center center;
   padding-top: 50px;
 }
 .footer {
   padding-bottom: 30px;
 }
 .footer p {
-  color: #d7dce0;
+  color: #ffc107;
 }
 .footer a {
   color: #fff;
@@ -3546,7 +3558,7 @@ body.lock-position {
 .tinmoinhat a.comments_number {
   padding-bottom: 0;
   height: 38px;
-  font-size: 16px
+  font-size: 16px;
 }
 .tinmoinhat h2 {
   margin-top: 5px;
@@ -3667,12 +3679,12 @@ fieldset.column {
   background: #ddd;
 }
 
-h1.page_title{
+h1.page_title {
   font-size: 28px;
   text-transform: uppercase;
   margin: 0;
 }
-.page_header_right{
+.page_header_right {
   float: none;
   width: 100%;
 }

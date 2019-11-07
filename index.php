@@ -38,7 +38,7 @@ $_SESSION['lang'] = $lang;
 	<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
 	<!--<link rel="stylesheet" type="text/css" href="style/dark_skin.css">-->
 	<!--<link rel="stylesheet" type="text/css" href="style/high_contrast_skin.css">-->
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon2.png" type="image/png">
 </head>
 <!--<body class="image_1">
 	<body class="image_1 overlay">

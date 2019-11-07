@@ -1,62 +1,61 @@
 <div class="container-fluid">
-            
-            <!-- Basic Examples -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                BASIC EXAMPLE
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                        </tr>
-                                    </thead>
-                                  
-                                    <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+
+    <!-- Basic Examples -->
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        QUẢN TRỊ USERS
+                    </h2>
+
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                            <thead>
+                                <tr>
+                                    <th>idUser </th>
+                                    <th>Họ Tên </th>
+                                    <th>Username </th>
+                                    <th>Email</th>
+                                    <th>Cấp Độ</th>
+                                    <th>Giới Tính </th>
+                                    <th>Cập Nhật/Xóa</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <?php $kq = $qt->ListUsers(); ?>
+                                <?php while ($row = $kq->fetch_assoc()) { ?>
+
+                                    <tr>
+                                        <td><?= $row['idUser'] ?></td>
+                                        <td><?= $row['HoTen'] ?></td>
+                                        <td><?= $row['Username'] ?></td>
+                                        <td><?= $row['Email'] ?></td>
+                                        <td><?= ($row['idGroup'] == 1) ? "<span class='col-green font-bold'>Admin</span>" : "Writer" ?></td>
+                                        <td><?= ($row['GioiTinh'] == 1) ? "<span class='font-bold'>Nam</span>" : "<span class='col-pink font-bold'> Nữ</span>" ?></td>
+                                        <td>
+                                            <a href="?p=users_sua&idUser=<?= $row['idUser'] ?>" class="btn bg-blue waves-effect">Cập nhật</a> &nbsp;
+                                            &nbsp;
+                                            <a href="users_xoa.php?idUser=<?= $row['idUser'] ?>" class="btn bg-red waves-effect" onclick="return confirm('bạn có chắc xóa <?= $row['HoTen'] ?>')">Xóa</a>
+
+                                        </td>
+                                    </tr>
+                                <?php  } ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <!-- #END# Basic Examples -->
-
-            
         </div>
-        <!-- JQuery DataTable Css -->
+    </div>
+    <!-- #END# Basic Examples -->
+
+
+</div>
+<!-- JQuery DataTable Css -->
 <link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 <!-- JQuery DataTable Css -->
 <link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">

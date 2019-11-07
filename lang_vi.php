@@ -5,7 +5,7 @@ define("TRANG_CHU", "Trang chủ");
 define("MOI_NHAN", "Mới nhận");
 define("TU_KHOA", "Từ khóa");
 define("TIN_TUC_TONG_HOP", "TIN TỨC TỔNG HỢP");
-define("SUB_SITETITLE", "Tin tức nóng sốt, đọc mau, đọc mau");
+define("SUB_SITETITLE", "Tin tức nóng hổi, vừa đọc, vừa thổi");
 define("TIN_MOI_NHAT", "Tin mới nhất");
 define("TIN_NOI_BAT", "Tin nổi bật");
 define("TIN_XEM_NHIEU", "Tin xem nhiều");

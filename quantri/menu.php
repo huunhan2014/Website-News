@@ -8,14 +8,14 @@
     </li>
     <li>
         <a href="thoat.php">
-            <i class="material-icons">text_fields</i>
+            <i class="material-icons">input</i>
             <span>Thoát </span>
         </a>
     </li>
     <!-- ================= -->
     <li>
         <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">view_list</i>
+            <i class="material-icons">perm_media</i>
             <span>Thể Loại</span>
         </a>
         <ul class="ml-menu">
@@ -45,7 +45,7 @@
     <!-- End Loai Tin -->
     <li>
         <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">view_list</i>
+            <i class="material-icons">mode_edit</i>
             <span> Tin</span>
         </a>
         <ul class="ml-menu">
@@ -60,11 +60,11 @@
     <!-- End Tin -->
     <li>
         <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">view_list</i>
+            <i class="material-icons">comment</i>
             <span> Ý Kiến</span>
         </a>
         <ul class="ml-menu">
-            
+
             <li>
                 <a href="?p=ykien_ds">Danh Sách Ý Kiến</a>
             </li>
@@ -73,11 +73,13 @@
     <!-- End Y Kien -->
     <li>
         <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">view_list</i>
+            <i class="material-icons">person</i>
             <span> Users</span>
         </a>
         <ul class="ml-menu">
-            
+            <li>
+                <a href="?p=users_them">Thêm User</a>
+            </li>
             <li>
                 <a href="?p=users_ds">Danh Sách Users</a>
             </li>
@@ -86,7 +88,7 @@
     <!-- End Users -->
     <li>
         <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">view_list</i>
+            <i class="material-icons">flag</i>
             <span> Tags</span>
         </a>
         <ul class="ml-menu">
