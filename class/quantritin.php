@@ -484,4 +484,47 @@ class quantritin extends goc
 
     // End users
     //====================================================================================
+
+    public function demSoTin()
+    {
+        $sql="SELECT COUNT(*) soTin FROM tin";
+        $kq=$this->db->query($sql);
+        if (!$kq) die("Loi trong ham`" . __FUNCTION__ . "" . $this->db->error);
+        $row=$kq->fetch_row();
+        $row_cs=$row[0];
+        return $row_cs;
+        
+    }//end demSoTin
+    public function demSoLuotXem()
+    {
+        $sql="SELECT SUM(SoLanXem) soLuotXem FROM tin";
+        $kq=$this->db->query($sql);
+        if (!$kq) die("Loi trong ham`" . __FUNCTION__ . "" . $this->db->error);
+        $row=$kq->fetch_row();
+        $row_cs=$row[0];
+        return $row_cs;
+        
+    }//end demSoLuotXem
+    public function demSoYKien()
+    {
+        $sql="SELECT COUNT(*) soYKien FROM ykien";
+        $kq=$this->db->query($sql);
+        if (!$kq) die("Loi trong ham`" . __FUNCTION__ . "" . $this->db->error);
+        $row=$kq->fetch_row();
+        $row_cs=$row[0];
+        return $row_cs;
+        
+    }//end demSoYKien
+    public function demSoUser()
+    {
+        $sql="SELECT COUNT(*) soUser FROM users";
+        $kq=$this->db->query($sql);
+        if (!$kq) die("Loi trong ham`" . __FUNCTION__ . "" . $this->db->error);
+        $row=$kq->fetch_row();
+        $row_cs=$row[0];
+        return $row_cs;
+        
+    }//end demSoUser
+
+    // End dashboard ======================================================
 }//class quantritin
