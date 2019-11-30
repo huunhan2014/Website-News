@@ -1,6 +1,6 @@
 <ul class="list">
     <li class="header">CHUYÊN MỤC </li>
-    <li class="active">
+    <li <?php if ($p == '') echo "class='active'"; ?>>
         <a href="index.php">
             <i class="material-icons">home</i>
             <span>Trang Chủ</span>
@@ -13,7 +13,7 @@
         </a>
     </li>
     <!-- ================= -->
-    <li>
+    <li <?php if ($p == 'theloai_ds' or $p == 'theloai_them') echo "class='active'"; ?>>
         <a href="javascript:void(0);" class="menu-toggle">
             <i class="material-icons">perm_media</i>
             <span>Thể Loại</span>
@@ -28,7 +28,7 @@
         </ul>
     </li>
     <!-- End The Loai -->
-    <li>
+    <li <?php if ($p == 'loaitin_ds' or $p == 'loaitin_them') echo "class='active'"; ?>>
         <a href="javascript:void(0);" class="menu-toggle">
             <i class="material-icons">view_list</i>
             <span>Loại Tin</span>
@@ -43,7 +43,7 @@
         </ul>
     </li>
     <!-- End Loai Tin -->
-    <li>
+    <li <?php if ($p == 'tin_ds' or $p == 'tin_them') echo "class='active'"; ?>>
         <a href="javascript:void(0);" class="menu-toggle">
             <i class="material-icons">mode_edit</i>
             <span> Tin</span>
@@ -58,7 +58,7 @@
         </ul>
     </li>
     <!-- End Tin -->
-    <li>
+    <li <?php if ($p == 'ykien_ds') echo "class='active'"; ?>>
         <a href="javascript:void(0);" class="menu-toggle">
             <i class="material-icons">comment</i>
             <span> Ý Kiến</span>
@@ -71,7 +71,7 @@
         </ul>
     </li>
     <!-- End Y Kien -->
-    <li>
+    <li <?php if ($p == 'users_ds' or $p == 'users_them') echo "class='active'"; ?>>
         <a href="javascript:void(0);" class="menu-toggle">
             <i class="material-icons">person</i>
             <span> Users</span>
@@ -86,7 +86,7 @@
         </ul>
     </li>
     <!-- End Users -->
-    <li>
+    <li <?php if ($p == 'tags_ds' or $p == 'tags_them') echo "class='active'"; ?>>
         <a href="javascript:void(0);" class="menu-toggle">
             <i class="material-icons">flag</i>
             <span> Tags</span>
