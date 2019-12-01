@@ -1,7 +1,6 @@
 <?php
 $TenTag_KhongDau = isset($_GET['TenTag_KhongDau']) ? $_GET['TenTag_KhongDau'] : '';
 echo $idTag = $t->LayidTag($TenTag_KhongDau) ;
-echo "aaaaaaaaaaa";
 
 $pageSize = PAGEGINATION_PERPAGE; //so tin se hien trong 1 tin
 if (isset($_GET['pageNum'])) $pageNum = $_GET['pageNum']; // trang user xem

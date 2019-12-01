@@ -1,4 +1,4 @@
-<?php $kq = $t->TinNgauNhien(3, $lang); ?>
+<?php $kq = $t->TinNgauNhien(6, $lang); ?>
 
 <ul class="blog small vertical_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750">
     <?php while ($row = $kq->fetch_assoc()) { ?>

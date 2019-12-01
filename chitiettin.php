@@ -182,7 +182,7 @@ $t->CapNhatSolanXemTin($idTin);
                 <div class="comment_details">
                     <div class="posted_by clearfix">
                         <h5><a class="author" href="#" title="<?= $row['HoTen'] ?>" style="cursor: default" onclick=" return false"><?= $row['HoTen'] ?></a></h5>
-                        <abbr title="22 July 2019" class="timeago"> <?= date('d/m/Y H:i:s', strtotime($row['Ngay'])) ?> </abbr>
+                        <abbr title="01 Dec 2019" class="timeago"> <?= date('d/m/Y H:i:s', strtotime($row['Ngay'])) ?> </abbr>
                     </div>
                     <p>
                         <?= $row['NoiDung'] ?>
