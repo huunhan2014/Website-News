@@ -6,7 +6,7 @@ if (isset($_POST['TenTL'])) {
     $AnHien = $_POST['AnHien'];
     $lang = $_POST['lang'];
     $qt->TheLoai_Them($TenTL, $TenTL_KD, $ThuTu, $AnHien, $lang);
-    echo "<script> document.location='index.php?p=theloai_ds';</script>";
+    echo "<script> document.location = 'index.php?p=theloai_ds';</script>";
     exit();
 }
 
@@ -78,7 +78,12 @@ if (isset($_POST['TenTL'])) {
                         <div class="col-sm-9">
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" id="ThuTu" name="ThuTu" class="form-control" placeholder="Nhập thứ tự" required min="1" max="1000">
+                                    <input type="text" list="listThuTu" id="ThuTu" name="ThuTu" class="form-control" placeholder="Nhập thứ tự" required min="1" max="1000">
+                                    <datalist id="listThuTu">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                    </datalist>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +120,8 @@ if (isset($_POST['TenTL'])) {
                     </div>
                     <div class="row clearfix">
                         <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">THÊM THỂ LOẠI</button> </div>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">THÊM THỂ LOẠI</button>
+                        </div>
                     </div>
                 </form>
             </div>

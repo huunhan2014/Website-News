@@ -96,7 +96,7 @@ $kq = $qt->ListTin($idTL, $idLT);
                                         <td>
                                             <p>idTin: <?= str_pad($rowTin['idTin'], 3, 0, STR_PAD_LEFT) ?></p>
                                             <p><?= date('d/m/Y', strtotime($rowTin['Ngay'])) ?></p>
-                                            <p>Xem <?= $rowTin['SoLanXem'] ?></p>
+                                            <p>Xem: <?= $rowTin['SoLanXem'] ?></p>
                                         </td>
                                         <td>
                                             <h4><?= $rowTin['TieuDe'] ?> <span> (<?= $rowTin['TenTL']  ?>/
